@@ -13,7 +13,8 @@
 		F845056419E97199009CE4CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F845056219E97199009CE4CB /* Main.storyboard */; };
 		F845056619E97199009CE4CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F845056519E97199009CE4CB /* Images.xcassets */; };
 		F845056919E97199009CE4CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845056719E97199009CE4CB /* LaunchScreen.xib */; };
-		F845057519E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F845057419E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.m */; };
+		F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */; };
+		F845058219E97249009CE4CB /* HourMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F845058119E97249009CE4CB /* HourMarkerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,9 @@
 		F845056819E97199009CE4CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F845056E19E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDMovingViewOffLeftReappearFromRightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F845057319E97199009CE4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F845057419E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDMovingViewOffLeftReappearFromRightTests.m; sourceTree = "<group>"; };
+		F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerViewTestCase.m; sourceTree = "<group>"; };
+		F845058019E97249009CE4CB /* HourMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourMarkerView.h; sourceTree = "<group>"; };
+		F845058119E97249009CE4CB /* HourMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				F845056519E97199009CE4CB /* Images.xcassets */,
 				F845056719E97199009CE4CB /* LaunchScreen.xib */,
 				F845055819E97199009CE4CB /* Supporting Files */,
+				F845058019E97249009CE4CB /* HourMarkerView.h */,
+				F845058119E97249009CE4CB /* HourMarkerView.m */,
 			);
 			path = TDDMovingViewOffLeftReappearFromRight;
 			sourceTree = "<group>";
@@ -105,8 +110,8 @@
 		F845057119E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests */ = {
 			isa = PBXGroup;
 			children = (
-				F845057419E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.m */,
 				F845057219E97199009CE4CB /* Supporting Files */,
+				F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */,
 			);
 			path = TDDMovingViewOffLeftReappearFromRightTests;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				F845056119E97199009CE4CB /* ViewController.m in Sources */,
 				F845055E19E97199009CE4CB /* AppDelegate.m in Sources */,
+				F845058219E97249009CE4CB /* HourMarkerView.m in Sources */,
 				F845055B19E97199009CE4CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F845057519E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRightTests.m in Sources */,
+				F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
