@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HourMarkerView.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) HourMarkerView *hourMarkerView1;
+
+- (HourMarkerView *)hourMarkerView1;
 
 
 @end

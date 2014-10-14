@@ -15,6 +15,7 @@
 		F845056919E97199009CE4CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845056719E97199009CE4CB /* LaunchScreen.xib */; };
 		F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */; };
 		F845058219E97249009CE4CB /* HourMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F845058119E97249009CE4CB /* HourMarkerView.m */; };
+		F845058419EBCBB9009CE4CB /* TimelineViewControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerViewTestCase.m; sourceTree = "<group>"; };
 		F845058019E97249009CE4CB /* HourMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourMarkerView.h; sourceTree = "<group>"; };
 		F845058119E97249009CE4CB /* HourMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerView.m; sourceTree = "<group>"; };
+		F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewControllerTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				F845057219E97199009CE4CB /* Supporting Files */,
 				F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */,
+				F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */,
 			);
 			path = TDDMovingViewOffLeftReappearFromRightTests;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F845058419EBCBB9009CE4CB /* TimelineViewControllerTestCase.m in Sources */,
 				F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +422,7 @@
 				F845057A19E97199009CE4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F845057B19E97199009CE4CB /* Build configuration list for PBXNativeTarget "TDDMovingViewOffLeftReappearFromRightTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				F845057D19E97199009CE4CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
