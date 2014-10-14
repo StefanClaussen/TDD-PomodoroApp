@@ -15,10 +15,15 @@
 @implementation ViewController
 
 @synthesize hourMarkerView1 = _hourMarkerView1;
+@synthesize hourMarkerView2 = _hourMarkerView2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.hourMarkerView1];
+    [self.view addSubview:self.hourMarkerView2];
+    
+    [self setTimeForTheHourMarkerViewLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,16 +31,41 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Create the two HourMarkerViews
+#pragma mark - Initialise the two HourMarkerViews
 
 //  Want to try and implement tell don't ask principle.
 //  Lazily instantiate the hourMarker
 - (HourMarkerView *)hourMarkerView1
 {
     if (!_hourMarkerView1) {
+        //In CGRectMake
+        //first number is x starting points, can use this to set the distance between the views
+        //second number is y location, so how high or low on the screen.
+        //Last two values are the rectangles size.
+
         _hourMarkerView1 = [[HourMarkerView alloc] initWithFrame:CGRectMake(315.0f, 92.0f, 2.0f, 10.0f)];
     }
     return _hourMarkerView1;
 }
+
+- (HourMarkerView *)hourMarkerView2
+{
+    if (!_hourMarkerView2) {
+        _hourMarkerView2 = [[HourMarkerView alloc] initWithFrame:CGRectMake(75.0f, 92.0f, 2.0f, 10.0f)];
+    }
+    return _hourMarkerView2;
+}
+
+#pragma mark - Set up for hourMarkerViewLabels
+
+- (void)setTimeForTheHourMarkerViewLabel
+{
+    self.hourMarkerViewLabel1.text = self.hourMarkerView1.currentHourString;
+}
+
+
+
+
+
 
 @end

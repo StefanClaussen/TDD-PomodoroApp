@@ -10,6 +10,7 @@
 
 @interface HourMarkerView : UIView
 
-@property (strong, nonatomic)NSString *hourString;
+@property (strong, nonatomic)NSString *currentHourString;
+@property (strong, nonatomic)NSString *nextHourString;
 
 @end

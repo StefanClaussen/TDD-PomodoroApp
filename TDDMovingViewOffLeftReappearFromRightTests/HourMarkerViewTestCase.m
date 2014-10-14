@@ -29,10 +29,24 @@
     [super tearDown];
 }
 
-- (void)testHasAStringPropertyForTheHour
+- (void)testHasAStringPropertyForTheCurrentHour
 {
-    hourMarkerView.hourString = @"3pm";
-    XCTAssertNotNil(hourMarkerView.hourString, @"The hourString should be set");
+    hourMarkerView.currentHourString = @"3pm";
+    XCTAssertNotNil(hourMarkerView.currentHourString, @"currentHourString should be set to the past hour");
+}
+
+- (void)test_currentHourStringIsThePastHourInCorrectFormat
+{
+    NSDateFormatter *hourDateFormatter = [[NSDateFormatter alloc] init];
+    [hourDateFormatter setDateFormat:@"h a"];
+    NSString *currentHourFormattedString = [[hourDateFormatter stringFromDate:[NSDate date]] lowercaseString];
+    XCTAssertEqualObjects(currentHourFormattedString, hourMarkerView.currentHourString, @"currentHourString should be %@ and formatted 12 hour am or pm", currentHourFormattedString);
+}
+
+- (void)testHasAStringPropertyForTheNextHour
+{
+    hourMarkerView.nextHourString = @"4pm";
+    XCTAssertNotNil(hourMarkerView.nextHourString, @"nextHourString should be set to the next hour");
 }
 
 - (void)test_hourStringIsCurrentHourPlusOneAndInTheCorrectFormat
@@ -41,9 +55,13 @@
     NSDateFormatter *hourDateFormatter=[[NSDateFormatter alloc] init];
     [hourDateFormatter setDateFormat:@"h a"];
     NSString *hourPlusOneFormattedString = [[hourDateFormatter stringFromDate:hourPlusOne] lowercaseString];
-    XCTAssertEqualObjects(hourPlusOneFormattedString, hourMarkerView.hourString, @"hourString should be %@, current hour plus one, and formatted 12 hour am or pm", hourPlusOneFormattedString);
+    XCTAssertEqualObjects(hourPlusOneFormattedString, hourMarkerView.nextHourString, @"hourString should be %@, current hour plus one, and formatted 12 hour am or pm", hourPlusOneFormattedString);
 }
 
+//- (void)testDrawsACustomView
+//{
+//   How to test that draws a custom view?  The drawRect method.
+//}
 
 
 
@@ -51,12 +69,5 @@
 
 
 
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

@@ -34,11 +34,46 @@
     [super tearDown];
 }
 
-- (void)testHourMarkerViewOneIsCreated
+- (void)testHourMarkerViewOneIsNotNil
 {
     vc.hourMarkerView1 = [vc hourMarkerView1];
-    XCTAssertNotNil(vc.hourMarkerView1, @"Should create first HourMarkerView1");
-    XCTAssertTrue([vc.hourMarkerView1 isKindOfClass:[HourMarkerView class]]);
+    XCTAssertNotNil(vc.hourMarkerView1, @"Should create HourMarkerView1");
+    XCTAssertTrue([vc.hourMarkerView1 isKindOfClass:[HourMarkerView class]], @"Should be of HourMarkerView class");
+}
+
+- (void)testHourMarkerViewOneIsASubview
+{
+    XCTAssertTrue([vc.hourMarkerView1 isDescendantOfView:vc.view]);
+}
+
+- (void)testHourMarkerViewTwoIsNotNil
+{
+    vc.hourMarkerView2 = [vc hourMarkerView2];
+    XCTAssertNotNil(vc.hourMarkerView2, @"Should create HourMarkerView2");
+    XCTAssertTrue([vc.hourMarkerView2 isKindOfClass:[HourMarkerView class]], @"Should be of HourMarkerView class");
+}
+
+- (void)testHourMarkerViewTwoIsASubview
+{
+    XCTAssertTrue([vc.hourMarkerView2 isDescendantOfView:vc.view]);
+}
+
+- (void)testHourMarkerLabel1isNotNil
+{
+    XCTAssertNotNil([vc hourMarkerViewLabel1], @"Should create a hourMarkerViewLabel");
+    XCTAssertTrue([vc.hourMarkerViewLabel1 isKindOfClass:[UILabel class]], @"Should be of class UILabel");
+}
+
+- (void)test_textForHourMarkerLabel1IsSetToAnHourString
+{
+    [vc setTimeForTheHourMarkerViewLabel];
+    XCTAssertEqualObjects(vc.hourMarkerViewLabel1.text, vc.hourMarkerView1.currentHourString, @"Label should be set to the hourString");
+}
+
+- (void)testViewLoadsWith_hourMarkerViewLabel1HavingAnHourString
+{
+    [vc viewDidLoad];
+    XCTAssertEqualObjects(vc.hourMarkerViewLabel1.text, vc.hourMarkerView1.currentHourString, @"Label should be set to the hourString");
 }
 
 
