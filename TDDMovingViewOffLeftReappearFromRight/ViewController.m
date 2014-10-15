@@ -23,7 +23,9 @@
     [self.view addSubview:self.hourMarkerView1];
     [self.view addSubview:self.hourMarkerView2];
     
-    [self setTimeForTheHourMarkerViewLabel];
+    // Do no thave a test, that makes me write this code.
+    [self setTimeForTheHourMarkerViewLabel1];
+    [self setTimeForTheHourMarkerViewLabel2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +45,7 @@
         //second number is y location, so how high or low on the screen.
         //Last two values are the rectangles size.
 
-        _hourMarkerView1 = [[HourMarkerView alloc] initWithFrame:CGRectMake(315.0f, 92.0f, 2.0f, 10.0f)];
+        _hourMarkerView1 = [[HourMarkerView alloc] initWithFrame:CGRectMake(75.0f, 92.0f, 2.0f, 10.0f)];
     }
     return _hourMarkerView1;
 }
@@ -51,16 +53,21 @@
 - (HourMarkerView *)hourMarkerView2
 {
     if (!_hourMarkerView2) {
-        _hourMarkerView2 = [[HourMarkerView alloc] initWithFrame:CGRectMake(75.0f, 92.0f, 2.0f, 10.0f)];
+        _hourMarkerView2 = [[HourMarkerView alloc] initWithFrame:CGRectMake(315.0f, 92.0f, 2.0f, 10.0f)];
     }
     return _hourMarkerView2;
 }
 
 #pragma mark - Set up for hourMarkerViewLabels
 
-- (void)setTimeForTheHourMarkerViewLabel
+- (void)setTimeForTheHourMarkerViewLabel1
 {
     self.hourMarkerViewLabel1.text = self.hourMarkerView1.currentHourString;
+}
+
+- (void)setTimeForTheHourMarkerViewLabel2
+{
+    self.hourMarkerViewLabel2.text = self.hourMarkerView2.nextHourString;
 }
 
 
