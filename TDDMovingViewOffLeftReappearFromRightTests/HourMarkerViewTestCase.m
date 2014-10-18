@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "HourMarkerView.h"
-#import "FBSnapshotTestCase.h"
+
 
 @interface HourMarkerViewTestCase : XCTestCase
 {
@@ -59,10 +59,7 @@
     XCTAssertEqualObjects(hourPlusOneFormattedString, hourMarkerView.nextHourString, @"hourString should be %@, current hour plus one, and formatted 12 hour am or pm", hourPlusOneFormattedString);
 }
 
-//- (void)testDrawsACustomView
-//{
-//   How to test that draws a custom view?  The drawRect method.
-//}
+
 
 
 

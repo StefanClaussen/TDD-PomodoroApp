@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9AA071F663F6AB58FAE78AF2 /* libPods-TDDMovingViewOffLeftReappearFromRightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6DD78F2705BB6E2E3378B7 /* libPods-TDDMovingViewOffLeftReappearFromRightTests.a */; };
+		C1BC50D4A59F8C3E28C31235 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D58186BB55FFFE4B071BCF8B /* libPods.a */; };
 		F845055B19E97199009CE4CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F845055A19E97199009CE4CB /* main.m */; };
 		F845055E19E97199009CE4CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F845055D19E97199009CE4CB /* AppDelegate.m */; };
 		F845056119E97199009CE4CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F845056019E97199009CE4CB /* ViewController.m */; };
@@ -17,6 +18,7 @@
 		F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */; };
 		F845058219E97249009CE4CB /* HourMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F845058119E97249009CE4CB /* HourMarkerView.m */; };
 		F845058419EBCBB9009CE4CB /* TimelineViewControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */; };
+		F8B55AF319F2C9E90052039C /* HourMarkerViewSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B55AF219F2C9E90052039C /* HourMarkerViewSnapshotTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		004A8AF42173A8E51DC0B555 /* Pods-TDDMovingViewOffLeftReappearFromRightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDMovingViewOffLeftReappearFromRightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDMovingViewOffLeftReappearFromRightTests/Pods-TDDMovingViewOffLeftReappearFromRightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0A6DD78F2705BB6E2E3378B7 /* libPods-TDDMovingViewOffLeftReappearFromRightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDDMovingViewOffLeftReappearFromRightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A00A3DB77D73672D38E0E5 /* Pods-TDDMovingViewOffLeftReappearFromRightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDMovingViewOffLeftReappearFromRightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDMovingViewOffLeftReappearFromRightTests/Pods-TDDMovingViewOffLeftReappearFromRightTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C265ED151F4856914E6CC10 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D58186BB55FFFE4B071BCF8B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F845055519E97199009CE4CB /* TDDMovingViewOffLeftReappearFromRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDMovingViewOffLeftReappearFromRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F845055919E97199009CE4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F845055A19E97199009CE4CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		F845058019E97249009CE4CB /* HourMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourMarkerView.h; sourceTree = "<group>"; };
 		F845058119E97249009CE4CB /* HourMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerView.m; sourceTree = "<group>"; };
 		F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewControllerTestCase.m; sourceTree = "<group>"; };
+		F8B55AF219F2C9E90052039C /* HourMarkerViewSnapshotTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourMarkerViewSnapshotTestCase.m; sourceTree = "<group>"; };
+		FD71928333193BF7CD08F1DD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1BC50D4A59F8C3E28C31235 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				0A6DD78F2705BB6E2E3378B7 /* libPods-TDDMovingViewOffLeftReappearFromRightTests.a */,
+				D58186BB55FFFE4B071BCF8B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +91,8 @@
 			children = (
 				004A8AF42173A8E51DC0B555 /* Pods-TDDMovingViewOffLeftReappearFromRightTests.debug.xcconfig */,
 				47A00A3DB77D73672D38E0E5 /* Pods-TDDMovingViewOffLeftReappearFromRightTests.release.xcconfig */,
+				FD71928333193BF7CD08F1DD /* Pods.debug.xcconfig */,
+				8C265ED151F4856914E6CC10 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -139,6 +149,7 @@
 				F845057219E97199009CE4CB /* Supporting Files */,
 				F845057E19E971F4009CE4CB /* HourMarkerViewTestCase.m */,
 				F845058319EBCBB9009CE4CB /* TimelineViewControllerTestCase.m */,
+				F8B55AF219F2C9E90052039C /* HourMarkerViewSnapshotTestCase.m */,
 			);
 			path = TDDMovingViewOffLeftReappearFromRightTests;
 			sourceTree = "<group>";
@@ -179,7 +190,6 @@
 				F845056A19E97199009CE4CB /* Sources */,
 				F845056B19E97199009CE4CB /* Frameworks */,
 				F845056C19E97199009CE4CB /* Resources */,
-				C29332A96201BD7D1C8557BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,21 +274,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C29332A96201BD7D1C8557BD /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDDMovingViewOffLeftReappearFromRightTests/Pods-TDDMovingViewOffLeftReappearFromRightTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -299,6 +294,7 @@
 			files = (
 				F845058419EBCBB9009CE4CB /* TimelineViewControllerTestCase.m in Sources */,
 				F845057F19E971F4009CE4CB /* HourMarkerViewTestCase.m in Sources */,
+				F8B55AF319F2C9E90052039C /* HourMarkerViewSnapshotTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
