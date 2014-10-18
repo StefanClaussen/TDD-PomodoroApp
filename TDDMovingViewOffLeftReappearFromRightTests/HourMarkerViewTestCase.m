@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "HourMarkerView.h"
+#import "FBSnapshotTestCase.h"
 
 @interface HourMarkerViewTestCase : XCTestCase
 {
