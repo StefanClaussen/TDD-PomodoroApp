@@ -22,8 +22,9 @@
 
 - (void)setUp {
     [super setUp];
-    hourMarkerView = [[HourMarkerView alloc] init];
-    self.recordMode = YES;
+    hourMarkerView = [[HourMarkerView alloc] initWithFrame:CGRectMake(75.0f, 92.0f, 2.0f, 10.0f)];
+    //Change to Yes, when recording drawing a view.  Change to NO when making a comparison.  
+    self.recordMode = NO;
 }
 
 - (void)tearDown {
@@ -33,10 +34,10 @@
 
 - (void)testCustomDrawHourViewMethod
 {
-    [hourMarkerView setBackgroundColor:[UIColor blueColor]];
-    [hourMarkerView drawRect:(CGRectMake(75.0f, 92.0f, 2.0f, 10.0f))];
+//    [hourMarkerView setBackgroundColor:[UIColor blueColor]];
+//    [hourMarkerView drawRect:(CGRectMake(75.0f, 92.0f, 2.0f, 10.0f))];
     
-    FBSnapshotVerifyView(hourMarkerView, @"Custom hour view failed to draw");
+    FBSnapshotVerifyLayer(hourMarkerView.layer, @"hourMarkerView.layer failed to draw");
 }
 
 
