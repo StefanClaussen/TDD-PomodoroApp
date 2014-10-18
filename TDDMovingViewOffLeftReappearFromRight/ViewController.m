@@ -1,10 +1,6 @@
 //
 //  ViewController.m
 //  TDDMovingViewOffLeftReappearFromRight
-//
-//  Created by Stefan Claussen on 11/10/2014.
-//  Copyright (c) 2014 One foot after the other. All rights reserved.
-//
 
 #import "ViewController.h"
 
@@ -14,16 +10,12 @@
 
 @implementation ViewController
 
-@synthesize hourMarkerView1 = _hourMarkerView1;
-@synthesize hourMarkerView2 = _hourMarkerView2;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.view addSubview:self.hourMarkerView1];
     [self.view addSubview:self.hourMarkerView2];
     
-    // Do no thave a test, that makes me write this code.
     [self setTimeForTheHourMarkerViewLabel1];
     [self setTimeForTheHourMarkerViewLabel2];
 }

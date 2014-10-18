@@ -11,6 +11,7 @@
 #import "HourMarkerView.h"
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "OCMock.h"
 
 @interface TimelineViewControllerTestCase : XCTestCase
 {
@@ -70,17 +71,18 @@
     XCTAssertTrue([vc.hourMarkerViewLabel1 isKindOfClass:[UILabel class]], @"Should be of class UILabel");
 }
 
+//  Test is perhaps duplicated below.
+//  Wrote this test to make me write method setTimeForTheHourMarkerViewLabel
 - (void)test_textForHourMarkerViewLabel1IsSetToAnHourString
 {
     [vc setTimeForTheHourMarkerViewLabel1];
     XCTAssertEqualObjects(vc.hourMarkerViewLabel1.text, vc.hourMarkerView1.currentHourString, @"Label should be set to the currentHourString");
 }
 
-- (void)testViewLoadsWith_hourMarkerViewLabel1HavingAnHourString
+//  Test that text for a label is set to correct initial value when view is loaded.
+- (void)test_hourMarkerViewLabel1HasAnHourString
 {
-    // This test should fail if edit out line calling viewDidLoad.  It does not fail.  Test is not testing anything.
-    [vc viewDidLoad];
-    XCTAssertEqualObjects(vc.hourMarkerViewLabel1.text, vc.hourMarkerView1.currentHourString, @"Label should be set to the currentHourString");
+    XCTAssertTrue([vc.hourMarkerViewLabel1.text isEqual:vc.hourMarkerView1.currentHourString]);
 }
 
 #pragma mark - HourMarkerViewLabel2 setup
@@ -97,11 +99,16 @@
     XCTAssertEqualObjects(vc.hourMarkerViewLabel2.text, vc.hourMarkerView2.nextHourString, @"Label should be set to the nextHourString");
 }
 
-//  This test should be failing.
-- (void)testViewLoadsWith_hourMarkerViewLabel2HavingAnHourString
+- (void)test_hourMarkerViewLabel2HasAnHourString
 {
-    [vc viewDidLoad];
-    XCTAssertEqualObjects(vc.hourMarkerViewLabel2.text, vc.hourMarkerView2.nextHourString, @"Label should be set to the nextHourString");
+    XCTAssertTrue([vc.hourMarkerViewLabel2.text isEqual:vc.hourMarkerView2.nextHourString]);
+}
+
+#pragma mark - Describe Timeline moving
+
+-(void)test_hourMarkerView1ShouldMoveToTheLeft
+{
+    
 }
 
 
